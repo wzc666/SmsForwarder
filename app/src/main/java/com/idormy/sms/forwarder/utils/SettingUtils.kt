@@ -8,10 +8,10 @@ class SettingUtils private constructor() {
     companion object {
 
         //是否启动时检查更新
-        var autoCheckUpdate: Boolean by SharedPreference(AUTO_CHECK_UPDATE, true)
+        var autoCheckUpdate: Boolean by SharedPreference(AUTO_CHECK_UPDATE, false)
 
         //是否同意隐私政策
-        var isAgreePrivacy: Boolean by SharedPreference(IS_AGREE_PRIVACY_KEY, false)
+        var isAgreePrivacy: Boolean by SharedPreference(IS_AGREE_PRIVACY_KEY, true)
 
         //是否转发短信
         var enableSms: Boolean by SharedPreference(SP_ENABLE_SMS, false)
